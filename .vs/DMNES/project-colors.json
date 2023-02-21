@@ -5,7 +5,12 @@
       "ProjectGuid": "808732ea-0be6-4179-afc2-5e66e2fa506a",
       "DisplayName": "Core",
       "ColorIndex": 0
+    },
+    "352dbc21-bd2f-4ff2-ad2b-4d1549c2b5e6": {
+      "ProjectGuid": "352dbc21-bd2f-4ff2-ad2b-4d1549c2b5e6",
+      "DisplayName": "SDL2_Ui",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

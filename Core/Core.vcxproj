@@ -149,6 +149,10 @@
   <ItemGroup>
     <ClCompile Include="src\DM6502.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\DM6502.h" />
+    <ClInclude Include="include\types.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
