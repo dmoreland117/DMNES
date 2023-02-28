@@ -1,9 +1,18 @@
 #include <iostream>
 
-#include "DM6502.h"
-
+#include "Bus.h"
 
 int main(int argc, char* argv[])
 {
-	std::cout << (1 << 0) << std::endl;
+	bool isRunning = true;
+
+	Bus DMNES;
+
+	//TODO: add a power on function to insert cartrage.
+	DMNES.reset();
+
+	while (isRunning)
+	{
+		DMNES.clock();
+	}
 }
