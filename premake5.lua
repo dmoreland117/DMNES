@@ -81,3 +81,16 @@ project "SDL2_UI"
     filter "configurations:Release"
         defines "RELEASE"
         optimize "on"
+
+newaction
+{
+    trigger = "clean",
+    description = "Clean up Project files.",
+    execute = function()
+        print("Cleaning Project...")
+        os.remove("**.sln")
+        os.remove("**.vcxproj")
+        os.remove("**.filters")
+        print("Project cleaned.")
+    end
+}
