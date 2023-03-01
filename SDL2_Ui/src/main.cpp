@@ -8,6 +8,10 @@ int main(int argc, char* argv[])
 
 	Bus DMNES;
 
+	// set test reset vector
+	DMNES.write(0xFFFC, 0x00);
+	DMNES.write(0xFFFD, 0xAA);
+	
 	//TODO: add a power on function to insert cartrage.
 	DMNES.reset();
 

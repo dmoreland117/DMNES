@@ -1,6 +1,7 @@
 #pragma once
 #include "DM6502.h"
 
+// addres defines ====================================================================
 #define ADDR_2KB_RAM_BEGIN 0x0000
 #define ADDR_2KB_RAM_END 0x07FF
 
@@ -17,6 +18,7 @@
 // sprite data is usally stored in addres $0200(in ram)
 // so you would write #20 to this addres and it would transefer from $0200 - 02FF to sprite data
 #define ADDR_OAMDMA 0x4014
+// ===================================================================================
 
 class Bus
 {
@@ -32,6 +34,6 @@ public:
 	void clock();
 public:
 	DM6502 cpu;
-	Byte memory[2048] = {0, 0, 0};
+	Byte memory[1024 * 64];
 };
 

@@ -3,7 +3,7 @@
 
 DM6502::DM6502()
 {
-	reset();
+	//reset();
 }
 
 DM6502::~DM6502()
@@ -21,18 +21,18 @@ void DM6502::reset()
 	// i dont know if i need to set this since im doing it again while setting reset vector.
 	m_registers.PC = 0x0000;
 
+	// clear RAM.
+	//for (Word i = 0; i < 65535; i++)
+	//{
+	//	write(i, 0x00);
+	//}
+
 	// set reset vector.
 	Byte pcHi, pcLo;
 
 	pcLo = read(0xFFFC);
 	pcHi = read(0xFFFD);
 	m_registers.PC = (pcHi << 8) | pcLo;
-
-	// clear RAM.
-	for (Word i = 0; i < 2044; i++)
-	{
-		//write(i, 0x00);
-	}
 
 	// reset the helper values.
 	m_helperValues = { 0, 0, 0 };

@@ -2,6 +2,8 @@ workspace "DMNES"
     architecture "x64"
     configurations { "Debug", "Release" } 
 
+    startproject 'SDL2_UI'
+
 coreOutputDir = "%{cfg.buildcfg}-%{cfg.architecture}"
 
 project "Core"

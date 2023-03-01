@@ -74,6 +74,9 @@ public: // getters and setters
 	bool setFlag(Flags flag);
 	inline DM6502Registers getRegisters() { return m_registers; };
 
+private: // addresing modes.
+	int imm();
+
 private: // members
 	Bus* m_bus = nullptr;
 
