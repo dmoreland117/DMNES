@@ -7,6 +7,11 @@ Bus::Bus()
     // Connect devices to the bus.
     cpu.connectBus(this);
 
+    for (int i = 0; i < (1024 * 64); i++)
+    {
+        write(i, 0x00);
+    }
+
     //TODO
     //ppu.connectBus(this);
     //apu.connectBus(this);

@@ -162,7 +162,7 @@ int DM6502::LDY()
 void DM6502::initLookupTable()
 {
 	m_opcodeLookup[0x00] = {
-		"XXX", &DM6502::XXX, &DM6502::XXX, 2
+		"XXX", &DM6502::XXX, &DM6502::XXX, 1
 	};
 	m_opcodeLookup[0xA9] = {
 		"LDA", &DM6502::LDA, &DM6502::imm, 2
