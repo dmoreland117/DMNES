@@ -29,7 +29,7 @@ Byte Bus::write(Word a, Byte d)
     if (a >= 0x0000 && a <= 0xFFFF) {
         memory[a] = d;
 
-        std::cout << memory[a] << std::endl;
+        std::cout << (int)memory[a] << std::endl;
 
         return memory[a];
     }

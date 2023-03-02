@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stdint.h>
 
-typedef char	Byte;
-typedef wchar_t Word;
+typedef uint8_t	 Byte;
+typedef uint16_t Word;
